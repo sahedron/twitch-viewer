@@ -25,7 +25,7 @@
          }
          .iframe-content {
             /* ipad iframe hack */
-            height: 100%;
+            aspect-ratio: 1;
             overflow: auto;
             -webkit-overflow-scrolling: touch;
          }
@@ -96,8 +96,9 @@
             .iframe {
                height: 300px;
             }
-            .item {
-               flex: 1 320px;
+            .iframe-content {
+               aspect-ratio: auto;
+	       height: 160px;
             }
          }
       </style>
